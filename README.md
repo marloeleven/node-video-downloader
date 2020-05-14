@@ -16,16 +16,25 @@ download(URL).then(save('./', 'sample.mp4'));
 ## Api
 
 **download(url, options)**
+
 _url_: video url
+
 _options_: options to be applied for node-fetch
 
+
 **save(location, file_name)**
+
 _location_: path to where the file to be saved
+
 _file_name_: file name of the downloaded path. (note: include extension)
 
+
 **createOptions(options, useDefault = true)**
+
 _options_: (object) node-fetch options to be used
+
 _useDefault_: (boolean: true) flag to use default options
+
 
 ### Default Options
 
