@@ -41,7 +41,7 @@ const download = (url, options = defaultOptions) => {
   return fetch(url, options);
 };
 
-const save = (location, file_name) => async (response) => {
+const save = (location, file_name) => (response) => {
   if (!response.ok) {
     console.log(`unexpected response ${response.statusText}`);
 
@@ -50,7 +50,7 @@ const save = (location, file_name) => async (response) => {
 
   const output_path = path.join(location, file_name);
 
-  return await streamPipeline(
+  return streamPipeline(
     response.body,
     fs.createWriteStream(output_path)
   ).then(() => console.log(`Download Complete: ${file_name} \n`));
