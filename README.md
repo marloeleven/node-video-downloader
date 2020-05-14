@@ -22,11 +22,13 @@ _url_: video url
 _options_: options to be applied for node-fetch
 
 
+
 **save(location, file_name)**
 
 _location_: path to where the file to be saved
 
-_file_name_: file name of the downloaded path. (note: include extension)
+_file_name_: file name of the downloaded file. (extension included)
+
 
 
 **createOptions(options, useDefault = true)**
@@ -34,6 +36,7 @@ _file_name_: file name of the downloaded path. (note: include extension)
 _options_: (object) node-fetch options to be used
 
 _useDefault_: (boolean: true) flag to use default options
+
 
 
 ### Default Options
